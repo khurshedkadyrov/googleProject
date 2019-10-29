@@ -1,3 +1,4 @@
+
 public class Chipmunk {
     String name;
     int age;
@@ -10,7 +11,6 @@ public class Chipmunk {
     public void setName(String name) {
         this.name = name;
     }
-
 
 
     public void setAge(int age) {

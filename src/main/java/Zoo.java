@@ -1,5 +1,6 @@
 import org.openqa.selenium.json.JsonOutput;
 
+
 public class Zoo {
     public static void main(String[] args) {
         Chipmunk a = new Chipmunk();
@@ -31,7 +32,7 @@ public class Zoo {
         System.out.println("Name:\t" + myChipmunk4.getName());
         System.out.println("Age:\t" + myChipmunk4.getAge());
 
-        Chipmunk myChipmunk5 = new Chipmunk("Bubblegum", 12.1);
+        Chipmunk myChipmunk5 = new Chipmunk("Bubblegum",12.1);
         System.out.println("Name:\t" + myChipmunk5.getName());
         System.out.println("Weight:\t" + myChipmunk5.getWeight());
 
