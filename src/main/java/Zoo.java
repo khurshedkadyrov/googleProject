@@ -1,13 +1,23 @@
-import org.openqa.selenium.json.JsonOutput;
-
+import org.junit.Assert;
+import org.junit.Test;
 
 public class Zoo {
-    public static void main(String[] args) {
+    @Test
+    public void verifyConstructorOfChipmunk() {
+Chipmunk myChipmunk = new Chipmunk(251);
+        System.out.println(myChipmunk.getAge());
+        Assert.assertEquals("Chipmunk age",25, myChipmunk.getAge());
+    }
+}
+
+
+   /* public static void main(String[] args) {
         Chipmunk a = new Chipmunk();
         Chipmunk b = new Chipmunk();
         a.setName("Cucumber");
         a.setAge(25);
         a.setWeight(12.2);
+
         b.setName("Caviar");
         b.setAge(12);
         b.setWeight(15.12);
@@ -46,7 +56,7 @@ public class Zoo {
         System.out.println("Weight:\t" + myChipmunk.getWeight());
     }
 }
-
+*/
 
 
 
