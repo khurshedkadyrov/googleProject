@@ -22,28 +22,31 @@ public class GoogleTest {
   private WebDriver driver;
   private Map<String, Object> vars;
   JavascriptExecutor js;
+
   @Before
   public void setUp() {
     driver = new ChromeDriver();
     js = (JavascriptExecutor) driver;
     vars = new HashMap<String, Object>();
   }
+
   @After
   public void tearDown() {
     driver.quit();
   }
+
   @Test
   public void google() {
-    // Test name: google
-    // Step # | name | target | value | comment
-    // 1 | open | / |  | 
+    //Test name: google
+    //Step # | name | target | value | comment
+    //1 | open | / |  |
     driver.get("https://www.google.com/");
     // 2 | setWindowSize | 644x804 |  | 
     driver.manage().window().setSize(new Dimension(644, 804));
     // 3 | click | name=q |  | 
     driver.findElement(By.name("q")).click();
     // 4 | type | name=q | Selenium - Web Browser AutomaAion |
-    driver.findElement(By.name("q")).sendKeys("Selenium - Web Browser AutomaAion");
+    driver.findElement(By.name("q")).sendKeys("Selenium - Web Browser AutomaATion");
     // 5 | sendKeys | name=q | ${KEY_ENTER} | 
     driver.findElement(By.name("q")).sendKeys(Keys.ENTER);
     // 6 | click | css=i |  | 
@@ -53,4 +56,26 @@ public class GoogleTest {
     // 8 | click | linkText=Download |  | 
     driver.findElement(By.linkText("Download")).click();
   }
+  @Test
+  public void google1() {
+    //Test name: google
+    //Step # | name | target | value | comment
+    //1 | open | / |  |
+    driver.get("https://www.google.com/");
+    // 2 | setWindowSize | 644x804 |  |
+    driver.manage().window().setSize(new Dimension(644, 804));
+    // 3 | click | name=q |  |
+    driver.findElement(By.name("q")).click();
+    // 4 | type | name=q | Selenium - Web Browser AutomaAion |
+    driver.findElement(By.name("q")).sendKeys("Selenium - Web Browser AutomaAion");
+    // 5 | sendKeys | name=q | ${KEY_ENTER} |
+    driver.findElement(By.name("q")).sendKeys(Keys.ENTER);
+    // 6 | click | css=i |  |
+    driver.findElement(By.cssSelector("i")).click();
+    // 7 | click | css=div:nth-child(2) > .rc .LC20lb |  |
+    driver.findElement(By.cssSelector("div:nth-child(2) > .rc .LC20lb")).click();
+    // 8 | click | linkText=Download |  |
+    driver.findElement(By.linkText("Download")).click();
+  }
 }
+
