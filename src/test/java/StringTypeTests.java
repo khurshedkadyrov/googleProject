@@ -126,34 +126,33 @@ public class StringTypeTests {
     }
 
     @Test
-    public void mySumTest () {
-    assertEquals("aaabbb", "aaa" + "bbb");
+    public void mySumTest() {
+        assertEquals("aaabbb", "aaa" + "bbb");
 
     }
+
     @Test
     public void myConcatTest() {
-    assertEquals("aaabbb", "aaa".concat("bbb"));
+        assertEquals("aaabbb", "aaa".concat("bbb"));
 
-        }
+    }
 
-        @Test
-
-    public void myTest () {
-        assertEquals("aaa", String.format("aaa%s", "bbb"));
-        }
-
-@Test
-    public  void myTest4 () {
-    assertEquals("aaa", String.format("%s%s", "aaa", "bbb"));
-}
     @Test
-    public  void myTest5() {
+
+    public void myTest() {
+        assertEquals("aaa", String.format("aaa%s", "bbb"));
+    }
+
+    @Test
+    public void myTest4() {
+        assertEquals("aaa", String.format("%s%s", "aaa", "bbb"));
+    }
+
+    @Test
+    public void myTest5() {
         assertEquals("aaa", String.format("%sbbb", "Aaa"));
     }
 }
-
-
-
 
 
 //valueOf
