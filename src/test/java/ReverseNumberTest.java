@@ -2,22 +2,23 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class ReverseNumberTest{
+public class ReverseNumberTest {
 
     public static int getReversedDigit(int digit) {
+        digit = Math.abs(digit);
         String inputString = String.valueOf(digit);  //с методом StringBuffer получается тоже самое что и с методом toString, 3 из 5 тестов passed И 2 теста failed
         StringBuffer stringBuffer = new StringBuffer(inputString);
         stringBuffer.reverse();
         String reversedDigit = stringBuffer.toString();
-        int reversedInt = Integer.parseInt(reversedDigit);
+        int reversedDInt = Integer.parseInt(reversedDigit);
 
-      /*  String input = String.valueOf(digit); - пытался использовать метод toString - 3 passed и 2 failed
+        /*String input = String.valueOf(digit); //- пытался использовать метод toString - 3 passed и 2 failed
         String result = "";
         for (int i = input.length() - 1; i >= 0; i--) {
             result = result + input.charAt(i);
         }
         int reversedDigit = Integer.parseInt(result);*/
-        return reversedInt;
+        return reversedDInt;
     }
 
     @Test
