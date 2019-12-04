@@ -41,7 +41,8 @@ public class SumCalculator {                       //While condition
 
     @Test
     public void calculateSumForWhileOneTwenty() {
-        assertEquals(120, new SumCalculator().calculateSumForWhile(15)); }
+        assertEquals(120, new SumCalculator().calculateSumForWhile(15));
+    }
 
     public int calculateSumForDoWhile(int maxValue) {      // Do While condition
         int sum = 0;
@@ -82,7 +83,8 @@ public class SumCalculator {                       //While condition
 
     @Test
     public void calculateSumForDoWhileOneTwenty() {
-        assertEquals(120, new SumCalculator().calculateSumForDoWhile(15)); }
+        assertEquals(120, new SumCalculator().calculateSumForDoWhile(15));
+    }
 
     public int calculateSumForFor(int maxValue) {      // Condition For
         int sum = 0;
